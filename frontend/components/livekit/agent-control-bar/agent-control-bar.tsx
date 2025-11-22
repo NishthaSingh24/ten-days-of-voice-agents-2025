@@ -1,6 +1,6 @@
 'use client';
 
-import { type HTMLAttributes, useCallback, useState } from 'react';
+import { type HTMLAttributes, useCallback, useEffect, useState } from 'react';
 import { Track } from 'livekit-client';
 import { useChat, useRemoteParticipants } from '@livekit/components-react';
 import { ChatTextIcon, PhoneDisconnectIcon } from '@phosphor-icons/react/dist/ssr';
@@ -47,6 +47,9 @@ export function AgentControlBar({
   const publishPermissions = usePublishPermissions();
   const { isSessionActive, endSession } = useSession();
 
+  // whether chat control should be visible (derived to avoid recreating object in deps)
+  const chatVisible = controls?.chat ?? publishPermissions.data;
+
   const {
     micTrackRef,
     cameraToggle,
@@ -80,10 +83,18 @@ export function AgentControlBar({
     microphone: controls?.microphone ?? publishPermissions.microphone,
     screenShare: controls?.screenShare ?? publishPermissions.screenShare,
     camera: controls?.camera ?? publishPermissions.camera,
-    chat: controls?.chat ?? publishPermissions.data,
+    chat: chatVisible,
   };
 
   const isAgentAvailable = participants.some((p) => p.isAgent);
+
+  // Auto-open transcript/chat input when an agent becomes available so users can type
+  useEffect(() => {
+    if (isAgentAvailable && chatVisible) {
+      setChatOpen(true);
+      onChatOpenChange?.(true);
+    }
+  }, [isAgentAvailable, chatVisible, onChatOpenChange]);
 
   return (
     <div
