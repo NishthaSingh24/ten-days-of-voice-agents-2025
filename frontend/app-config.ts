@@ -20,9 +20,9 @@ export interface AppConfig {
 }
 
 export const APP_CONFIG_DEFAULTS: AppConfig = {
-  companyName: 'Brew Haven Café',
-  pageTitle: 'Brew Haven Café - AI Barista',
-  pageDescription: 'Order your favorite coffee with our AI barista powered by Murf Falcon',
+  companyName: 'Wellness Companion',
+  pageTitle: 'Wellness Companion - Daily Check-In',
+  pageDescription: 'Your supportive daily wellness check-in companion powered by Murf Falcon',
 
   supportsChatInput: true,
   supportsVideoInput: false,
@@ -30,10 +30,10 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   isPreConnectBufferEnabled: true,
 
   logo: '/lk-logo.svg',
-  accent: '#8B4513', // Coffee brown
+  accent: '#2563eb', // Vibrant blue
   logoDark: '/lk-logo-dark.svg',
-  accentDark: '#D2691E', // Chocolate
-  startButtonText: 'Start Ordering ☕',
+  accentDark: '#3b82f6', // Lighter blue for dark mode
+  startButtonText: 'Start Check-In ✨',
 
   // for LiveKit Cloud Sandbox
   sandboxId: undefined,

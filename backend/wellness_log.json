@@ -1,0 +1,63 @@
+[
+  {
+    "date": "2025-11-23T23:49:33.488721",
+    "mood": "okay, with a headache",
+    "energy_level": "a little tired",
+    "stress_factors": [],
+    "daily_objectives": [
+      "stay consistent",
+      "look after overall well-being"
+    ],
+    "agent_summary": "User is feeling okay, with a headache and is a little tired. Goals for today are to stay consistent and look after overall well-being."
+  },
+  {
+    "date": "2025-11-24T00:04:51.431272",
+    "mood": "okay",
+    "energy_level": "a little tired",
+    "stress_factors": [],
+    "daily_objectives": [
+      "drink more water"
+    ],
+    "agent_summary": "User is feeling okay, a little tired. No specific stress factors. Goal is to drink more water."
+  },
+  {
+    "date": "2025-11-24T00:10:52.242708",
+    "mood": "tired",
+    "energy_level": "six",
+    "stress_factors": [
+      "cluttered mind",
+      "overthinking small things"
+    ],
+    "daily_objectives": [
+      "feel more energetic",
+      "get routine back on track"
+    ],
+    "agent_summary": "User is feeling tired and heavy, energy level is a six. Mentioned a cluttered mind and overthinking small things as stress factors. Main goal is to feel more energetic and get routine back on track, with a focus on re-establishing one small habit today."
+  },
+  {
+    "date": "2025-11-24T12:49:09.479168",
+    "mood": "low",
+    "energy_level": "low",
+    "stress_factors": [
+      "cluttered mind",
+      "overthinking"
+    ],
+    "daily_objectives": [
+      "drink more water"
+    ],
+    "agent_summary": "User is feeling low with low energy, experiencing a cluttered mind and overthinking. The main objective for today is to drink more water."
+  },
+  {
+    "date": "2025-11-24T12:49:09.479168",
+    "mood": "low",
+    "energy_level": "low",
+    "stress_factors": [
+      "cluttered mind",
+      "overthinking"
+    ],
+    "daily_objectives": [
+      "drink more water"
+    ],
+    "agent_summary": "User is feeling low with low energy, experiencing a cluttered mind and overthinking. The main objective for today is to drink more water."
+  }
+]
